@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="mystyle.css">
     <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="bower_components/css-ripple-effect/dist/ripple.min.css">
+    <script src="scriptQuizPart.js"></script>
 </head>
 <body>
     <div class="container">
@@ -39,9 +40,60 @@
                 </div>
         </div>
 
-        <div class="quiz1">
-            <h3 id="quiz">Quiz</h3>
+<div class="quiz1">
+    <h3 id="quiz">Quiz</h3>
+    <h4> What is 1+1?</h4>
+    <form id = "question1" action = #formHandler>
+        <div>
+            <input type="radio" id="one" name="answer" value= 1 >
+            <label for="one">1</label><br>
+            <input type="radio" id="two" name="answer" value =2  >
+            <label for="two">2</label><br>
+            <input type="radio" id="three" name="answer" value=3  >
+            <label for="three">3</label>
+        </div> 
+        <div>
+            <input type="image" src = "submit_button.png" type = "Submit" width ="48" height = "48" onclick="submitAnswer()">
+            <input type= "image" src ="reset_button.png" alt = "reset" width = "48" height ="48">
         </div>
+           
+    </form> 
+
+    <h5> What is 2+2?</h5>
+    <form id = "question2" action = #formHandler>
+        <div>
+            <input type="radio" id="four" name="answer" value= 4>
+            <label for="four">4</label><br>
+            <input type="radio" id="five" name="answer" value =5 >
+            <label for="five">5</label><br>
+            <input type="radio" id="eight" name="answer" value=8>
+            <label for="six">3</label>
+        </div>
+        <div>
+            <input type="image" src = "submit_button.png" type = "Submit" width ="48" height = "48" onclick="submitAnswerTwo()">
+            <input type= "image" src ="reset_button.png" alt = "reset" width = "48" height ="48">
+        </div>
+    </form>
+
+
+    <h6> What is 3+3?</h6>
+    <form action = #formHandler>
+        <div>
+            <input type="radio" id="six" name="answer" value= 6>
+            <label for="six">6</label><br>
+            <input type="radio" id="eight" name="answer" value =8>
+            <label for="eight">8</label><br>
+            <input type="radio" id="nine" name="answer" value=9>
+            <label for="nine">9</label>
+        </div>
+        <div>
+            <input type="image" src = "submit_button.png" type = "Submit" width ="48" height = "48" onclick="submitAnswerThree()">
+            <input type= "image" src ="reset_button.png" alt = "reset" width = "48" height ="48">
+        </div>
+    </form>
+
+</div>
+
 
         <div class="local1">
             <h4 id="local">Local Resources</h4>
