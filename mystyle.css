@@ -5,7 +5,9 @@
     color: black;
     font-family: 'Racing Sans One', cursive;
     font-size: 50px;
+    text-align: center;
   }; 
+  
 
   a:link{
     color: black
@@ -16,10 +18,21 @@
   }
   
   a:hover {
-    font-size:120%;
+    font-size:105%;
     color: palevioletred
   }
 
-  h2, h3, h4 { 
+  h2 { 
     font-size:60px;
+    top: 400px;
+  }
+
+  h3{ 
+    font-size:60px;
+    top: 400px;
+  }
+
+   h4 { 
+    font-size:60px;
+    top: 400px;
   }
