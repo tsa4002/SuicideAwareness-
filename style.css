@@ -1,0 +1,47 @@
+body {
+    background-color: #FFA9A3;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+  }
+  h1 {
+    color: #5C95FF;
+    font-family: 'Abril Fatface', serif;
+  }
+
+  p {
+    color:#5C95FF;
+  
+
+  }
+
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #CDF7F6;
+
+  }
+  
+li {
+    float: left;
+  }
+  
+li a {
+    display: block;
+    color: #FFA9A3;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #95C6FB;
+  }
+
+.active {
+    background-color: #95C6FB;
+  } 
