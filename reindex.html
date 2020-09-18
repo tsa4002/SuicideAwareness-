@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="restyles.css">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap" rel="stylesheet">
-</head>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIwzALxUPNbatRBj3Xi1Uhp0fFzwWNBkE&callback=initMap&libraries=places&v=weekly" defer></script>
+    <script src="rescript.js"></script>
+  </head>
 <body>
 
   <header>
@@ -28,8 +30,7 @@
       <div><img src="https://suicidepreventionlifeline.org/wp-content/uploads/2016/08/Ribbon-1.png" width="70%"></div>
       <div>
         <p class="right">Suicide <span style="color:rgb(45, 200, 187)">Awareness</span> & <span style="color: rgb(119, 60, 144)">Prevention</span></p>
-        <h4 class="right"><em><span style="color:white;">In Light of September as National Suicide Prevention Month</span><span style="color:white;"> An Interactive & Visual Resource Page</span></em></h4>
-        <h1 class="right"><a href="#discover"><span style="background-color:rgb(45, 200, 187);" style="color:white">DISCOVER &#8594;</span></a></h1>
+        <h4 class="right"><em><span style="color:white;">In Light of September as National Suicide Prevention Month,</span><span style="color:white;"> We Present An Interactive & Visual Resource Page</span></em></h4>
       </div>
   </div>
   </section>
@@ -57,11 +58,11 @@
       </div>
       <div>
         <h3>5 Action Steps</h3>
-        <div><h4><span style="color:white;">#BeThe1To</span>ASK.</h4></div>
-        <div><h4><span style="color:white;">#BeThe1To</span>KEEP THEM SAFE.</h4></div>
-        <div><h4><span style="color:white;">#BeThe1To</span>BE THERE.</h4></div>
-        <div><h4><span style="color:white;">#BeThe1To</span>HELP THEM CONNECT.</h4></div>
-        <div><h4><span style="color:white;">#BeThe1To</span>FOLLOW UP.</h4></div>
+        <div><h4><span style="color:white;">#BeThe1To</span><b>ASK.</b></h4></div>
+        <div><h4><span style="color:white;">#BeThe1To</span><b>KEEP THEM SAFE.</b></h4></div>
+        <div><h4><span style="color:white;">#BeThe1To</span><b>BE THERE.</b></h4></div>
+        <div><h4><span style="color:white;">#BeThe1To</span><b>HELP THEM CONNECT.</b></h4></div>
+        <div><h4><span style="color:white;">#BeThe1To</span><b>FOLLOW UP.</b></h4></div>
       </div>
   </div>
   </section>
@@ -69,6 +70,56 @@
   <section class="map" id="map">
     <h2>Map</h2>
     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13037.224294032441!2d-80.8179448!3d35.2237501!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x58d6ba252e5366b!2sPromise%20Resource%20Network%20Inc!5e0!3m2!1sen!2sus!4v1600224700842!5m2!1sen!2sus" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    <div class="hotel-search">
+      <div id="findhotels">
+        Find Mental Health Resources in:
+      </div>
+
+      <div id="locationField">
+        <input id="autocomplete" placeholder="Enter a city" type="text" />
+      </div>
+
+      <div id="controls">
+        <select id="country">
+          <option value="us" selected>U.S.A.</option>
+        </select>
+      </div>
+    </div>
+
+    <div id="map"></div>
+
+    <div id="listing">
+      <table id="resultsTable">
+        <tbody id="results"></tbody>
+      </table>
+    </div>
+
+    <div style="display: none">
+      <div id="info-content">
+        <table>
+          <tr id="iw-url-row" class="iw_table_row">
+            <td id="iw-icon" class="iw_table_icon"></td>
+            <td id="iw-url"></td>
+          </tr>
+          <tr id="iw-address-row" class="iw_table_row">
+            <td class="iw_attribute_name">Address:</td>
+            <td id="iw-address"></td>
+          </tr>
+          <tr id="iw-phone-row" class="iw_table_row">
+            <td class="iw_attribute_name">Telephone:</td>
+            <td id="iw-phone"></td>
+          </tr>
+          <tr id="iw-rating-row" class="iw_table_row">
+            <td class="iw_attribute_name">Rating:</td>
+            <td id="iw-rating"></td>
+          </tr>
+          <tr id="iw-website-row" class="iw_table_row">
+            <td class="iw_attribute_name">Website:</td>
+            <td id="iw-website"></td>
+          </tr>
+        </table>
+      </div>
+    </div>
   </section>
 
   <footer>
@@ -78,7 +129,9 @@
     </div>
   </footer>
 
-  <script src="rescript.js"></script>
+  
+
+  
   </div>
 </body>
 </html>
