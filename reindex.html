@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap" rel="stylesheet">
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIwzALxUPNbatRBj3Xi1Uhp0fFzwWNBkE&callback=initMap&libraries=places&v=weekly" defer></script>
     <script src="rescript.js"></script>
+    <link rel="stylesheet" href = "quiz.css"> 
   </head>
 <body>
 
@@ -37,6 +38,27 @@
 
   <section class="discover" id="discover">
     <h2>Discover</h2>
+    <div id = "container">
+
+      <div id="start">Start Quiz!</div>
+      <div id = "quiz" style="display: none">
+          <div id="question"></div>
+          <div id="qImg"></div>
+          <div id="choices">
+              <div class = "choice" id = "A" onclick="checkAnswer('A')"></div>
+              <div class="choice" id="B" onclick="checkAnswer('B')"></div>
+              <div class="choice" id="C" onclick="checkAnswer('C')"></div>
+          </div>
+          <div id = "timer">
+              <div id = "counter"></div>
+              <div id = "btimeGuage"></div>
+              <div id = "timeGauge"></div>
+          </div>
+          <div id = "progress"></div>
+      </div>
+      <div id="scoreContainer" style = "display: none"></div>
+  </div>
+
   </section>
 
   <section class="resources" id="resources">
@@ -136,5 +158,7 @@
 
 
   </div>
+
+<script src="quiz.js"> </script>
 </body>
 </html>
