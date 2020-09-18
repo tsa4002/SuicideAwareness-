@@ -89,6 +89,13 @@ h3 {
   color: white;
 }
 
+h4 {
+  font-family: 'Open Sans', sans-serif;;
+  font-size: 30px;
+  color:  rgb(45, 200, 187);
+  font-weight: bold;
+}
+
 p {
   font-family: 'Quicksand', sans-serif;
   font-size: 100px;
