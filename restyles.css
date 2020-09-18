@@ -25,9 +25,18 @@ section {
   background: rgb(119, 60, 144);
 }
 
-footer {
+header {
+  position: sticky;
+  top: 0;
   background: rgb(53, 63, 90);
-  height: 50px;
+  height: 75px;
+}
+
+footer {
+  position: sticky;
+  bottom:0;
+  background: rgb(53, 63, 90);
+  height: 75px;
 }
 
 .flex-container {
@@ -39,7 +48,7 @@ footer {
 .flex-container > div {
   width: 100px;
   text-align: center;
-  line-height: 75px;
+  line-height: 50px;
   font-size: 30px;
   flex-grow: 1;
 }
@@ -92,4 +101,7 @@ p {
 
 img:hover {
   width: 55%;
+}
+html {
+  scroll-behavior: smooth;
 }
