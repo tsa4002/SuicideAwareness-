@@ -174,10 +174,18 @@ z-index: 1;
   flex: 1 1 140px;
 }
 #autocomplete {
-  width: 100%;
+  width: 30vw;
+  height: 2vw;
+  font-size: 1.25vw;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
 }
 #country {
-  width: 100%;
+  width: 10vw;
+  height: 2vw;
+  font-size: 1.25vw;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
 }
 .placeIcon {
   width: 20px;
