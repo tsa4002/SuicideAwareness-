@@ -126,6 +126,7 @@ body {
 }
 table {
   font-size: 12px;
+  width:100%;
 }
 .hotel-search {
 -webkit-box-align: center;
